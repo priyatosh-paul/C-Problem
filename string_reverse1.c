@@ -1,12 +1,10 @@
     #include <stdio.h>
-     
-    int main()
-    {
-       char s[1000], r[1000];
+     void ReverseString(char *s)
+     {
+         char r[1000];
        int begin, end, count = 0;
      
-       printf("Input a string\n");
-       gets(s);
+      
      
        // Calculating string length
      
@@ -24,6 +22,13 @@
      
        printf("%s\n", r);
      
+     }
+    int main()
+    {
+        char s[1000];
+        printf("Input a string\n");
+       gets(s);
+       ReverseString(s);
        return 0;
     }
 
